@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>JavaScript Selected Value</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+		
+        <div id="container">
+			
+		
+        	<form>
+				<label for="Class">Year: </label>
+					<select name="subject" id="class">
+						<option value="Upper">Upperclassman</option>
+						<option value="Lower">Lowerclassman</option>
+					</select>
+
+				<label for="Major">Major Type: </label>
+					<select name="subject" id="major">
+						<option value="Stem">STEM</option>
+						<option value="Humanities">Humanities</option>
+					</select>
+
+					<label for="elective">Enter elective your curious about: </label>
+					<select id="elective" class="gen_elecs">
+					</select>
+					
+					<label for="framework">Liked:</label>
+					<!-- <input type="text" id="" placeholder="Enter a framework" autocomplete="off"> -->
+					<select id="framework" class="gen_elecs">
+					  </select>
+
+					<button id="btnAdd">Add</button>
+
+					<label for="list">Liked List:</label>
+					<select id="list" name="list" multiple>
+
+					</select>
+					<button id="btnRemove">Remove Selected Elective</button>
+				
+					<label for="framework2">Disliked:</label>
+					<select id="framework2" class="gen_elecs">
+						</select>
+
+					<button id="btnAdd2">Add</button>
+
+					<label for="list2">Disliked List:</label>
+					<select id="list2" name="list2" multiple>
+
+					</select>
+					<button id="btnRemove2">Remove Selected Elective</button>
+
+					
+            </form>
+
+			<p id="content"> The probability of liking this class is: 
+				<span class="output"></span>
+			</p>
+
+			<button id="calc"> Calculate </button>
+        </div>
+		
+		<script type="text/javascript">
+ 
+			
+				let txt = document.getElementById("content");
+				txt.style.textAlign = "center";
+		</script>
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("mySelect");
+			  var option = document.createElement("option");
+			  option.text = "Kiwi";
+			  x.add(option);
+			}
+			</script>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>
