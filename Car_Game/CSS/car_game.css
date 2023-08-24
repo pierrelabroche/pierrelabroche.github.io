@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body 
+{
+	background: #637847 url("../Media/road.png") repeat-y fixed left;
+}
+
+#OrangeCar
+{
+	position: absolute;
+	height: 80px;
+	
+}
+
+#rules
+{
+	position: absolute;
+	top: 30px;
+	left: 30%;
+	padding: 10px;
+	width: 250px;
+	color: white;
+	font-size: 20px;
+	border: 10px solid white;
+}
+
+#message
+{
+	position: absolute;
+	font-size: 50px;
+	color: yellow;
+	font-weight: bold;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	width: 500px;
+	height: 100px;
+	margin: auto;
+	font-family: 'Press Start 2P', cursive;
+
+}
+

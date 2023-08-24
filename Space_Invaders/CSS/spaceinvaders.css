@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body
+{
+	background: #000000 url('../assets/stars.gif') repeat top left;
+}
+
+#stats
+{
+	font-family: 'Rowdies', cursive;
+	color: yellow;
+	font-size: 20px;
+	text-align: center;
+	border: 10px solid coral;
+	width: 150px;
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	background-color: rgba(255,0,255,0.7);
+}
+
+#ship
+{
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+}
+
+.bullet 
+{
+	background-color: yellow;
+	width: 3px;
+	height: 50px;
+	position: absolute;
+	bottom: 60px;
+	animation-name: moveUp; /*Applied animation*/
+	animation-duration: 1s; /*Duration of the animation*/
+	animation-timing-function: linear; /*Motion style*/
+
+}
+
+@keyframes moveUp
+{
+	from{ bottom: 60px; }
+	to{ bottom: 1000px; }
+}
+
+
+/*THIS SECTION DEFINES OUR ALIENS*/
+.alien
+{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	display: inline-block;
+	background-image: url('../Assets/invaders.png');
+}
+
+.alien1
+{
+	background-position: 0px 0px;
+
+}
+
+.alien2
+{
+	background-position: 0px 50px;
+
+}
+
+.alien3
+{
+	background-position: 0px 100px
+}
+
+#message
+{
+	color: yellow;
+	font-size: 50px;
+	margin-top: 250px;
+	width: 100%;
+	text-align: center;
+	display: none;
+	font-family: 'Press Start 2P', cursive;
+}
+ .explosion
+ {
+ 	background-image: url('../Assets/boom.gif');
+ 	position: absolute;
+ 	height: 50px;
+ 	width: 50px;
+ 	display: inline-block;
+ }
+
+
+
+
+
