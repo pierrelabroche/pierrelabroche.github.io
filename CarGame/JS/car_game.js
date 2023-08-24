@@ -26,19 +26,6 @@ var sfx4 = document.getElementById('gameover2');
 
 var sfx5 = document.getElementById('gameover3');
 
-
- // Function to start audio playback after a delay
- function startAudioDelayed(delay) {
-	setTimeout(function() {
-		var audio = document.getElementById('derezzed');
-		audio.play();
-	}, delay);
-}
-
-// Call the function to start audio after a 5-second delay
-startAudioDelayed(1000); 
-
-
 // Set the initial values for points and speed
 cars_avoided.innerHTML = points +" cars avoided";
 current_speed.innerHTML = speed +" mph";
@@ -54,9 +41,15 @@ OrangeCar.style.left = center_lane;
 // Listen out for a keypress event
 body.addEventListener('keypress', moveCar);
 
+var first_time = 0;
 // Handle a key press event
 function moveCar(trigger)
 {
+	if (first_time == 0) { 
+		var audio = document.getElementById('derezzed');
+		audio.play();
+		first_time = 1;
+	}
 	var current_lane = OrangeCar.style.left;
 
 	// Moves car from center lane to left lane

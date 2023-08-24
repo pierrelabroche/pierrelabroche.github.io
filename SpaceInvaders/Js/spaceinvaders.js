@@ -29,9 +29,15 @@ var misses = 0;
 //Activate our ship
 body.addEventListener('keydown', shipActions);
 
+var first_time = 0;
 // Handle keydown Event using ShipActions Function
 function shipActions(keydownEvent)
 {
+	if (first_time == 0) { 
+		var audio = document.getElementById('bg');
+		audio.play();
+		first_time = 1;
+	}
 	var now = Date.now();
 	// get the bounding box that surronds the ship
 	var bounds = ship.getBoundingClientRect();
