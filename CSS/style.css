@@ -1,0 +1,41 @@
+	
+		body 
+		{
+    		    /* Set the gradient background using linear gradient */
+				background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(170, 221, 235, 1) 100%);
+    /* This ensures the gradient covers the entire viewport */
+    height: 100vh;
+    /* Center content vertically and horizontally */
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Set text color to white for contrast */
+    color: black;
+		}
+/* 
+		h1
+		{
+			color: blue;
+		}
+
+		h2
+		{
+			color: purple;
+			
+		}
+		
+		#water
+		{
+			color: blue;
+		}
+
+		#earth
+		{
+			color: green;
+		}
+		
+		#air
+		{
+			color: darkorange;
+		} */
