@@ -14,8 +14,8 @@ play with:
 https://pierrelabroche.github.io/CSElecs/index.html
 
 Personal - Space Invaders:
-If you have never played, is a retro arcade game that our great, great...great
-grandparents used to play. After learning how to code through javascript, HTML, and CSS in high school, 
+If you have never played, it is a retro arcade game that our great, great...great
+grandparents used to play. After learning how to code through JavaScript, HTML, and CSS in high school, 
 I created this web version of said retro game. You have a spaceship at the bottom
 of the screen that you control and aliens above who are coming towards you slowly. You need to shoot
 all the aliens before they hit the bottom to win. It serves as a major milestone in my CS journey 
